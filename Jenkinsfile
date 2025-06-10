@@ -1,0 +1,1 @@
+pipeline { agent any stages { stage('Clone') { steps { git 'https://github.com/your-username/webapp-ci-cd.git' } } stage('Build') { steps { echo 'Building the web app...' } } stage('Deploy') { steps { echo 'Deploying to local Apache server...' } } } } 
